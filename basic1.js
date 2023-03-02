@@ -6,7 +6,7 @@ let sum = 0
 for(let i=0; i<a.length; i++){
     sum = a[i] + sum
 }
-console.log(sum)
+console.log(`This is the sum:`+ sum)
 
 
 let b = 0
@@ -14,7 +14,7 @@ let b = 0
 while(b<10){
     b++
 }
-console.log(b)
+console.log(`I'm bb`+ b)
 
 /*
 * The reduce method will iterate through the array just like for loop
@@ -78,6 +78,7 @@ let nextDate = '28'
 
 let diff = parseInt(nextDate) - parseInt(date)
 diff.toString()
+console.log(`Here the diif` + diff)
 
 let person = {
     firstName: 'John',
