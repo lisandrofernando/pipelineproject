@@ -7,24 +7,33 @@ stages{
   
      stage('build'){
            steps{
-             sh "npm install"
+            script{
+                    echo: 'building the application…'
+            }
+          
         }
     }
        stage('deploy'){
            steps{
-              echo: 'deploying the application…'
+             script{
+                    echo: 'deploying the application…'
+            }
         }
     }
 
     stage('testing'){
            steps{
-              echo: 'testing the application…'
+               script{
+                    echo: 'testing the application…'
+            }
         }
     }
 
-    stage('deploy'){
+    stage('release'){
            steps{
-              echo: 'deploying the application…'
+               script{
+                    echo: 'realeasing the application…'
+            }
         }
     }
 
